@@ -1,5 +1,8 @@
 # azure-servicebus-springboot-request-reply
-Este repositorio tiene como objetivo mostrar un ejemplo del Patrón Request-Reply utilizando Azure Service Bus y Java
+Este repositorio tiene como objetivo mostrar un ejemplo del Patrón Request-Reply utilizando:
+*  [Azure Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-queues)
+*  [Sesiones Azure Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessionsm)
+*   Java 11
 
 # Importante
 Asegurate de configurar lo siguiente: 
