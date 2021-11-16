@@ -12,7 +12,11 @@ import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+<<<<<<< HEAD
 //@Service
+=======
+@Service
+>>>>>>> f53b877580c7646e7167bef49afc7b85f93cec5a
 public class BrokerMessageServiceImpl implements BrokerMessageService {
 
     @Autowired

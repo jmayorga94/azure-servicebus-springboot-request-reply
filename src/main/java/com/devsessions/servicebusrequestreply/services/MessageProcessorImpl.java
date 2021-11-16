@@ -13,16 +13,29 @@ import java.util.concurrent.TimeUnit;
 public class MessageProcessorImpl implements  MessageProcessor{
 
 
+<<<<<<< HEAD
     private String connectionString = "Endpoint=sb://sb-ba-development.servicebus.windows.net/;SharedAccessKeyName=senderKey;SharedAccessKey=pLmDo6k+WmJDhjqGYt0JwzTQNIf3FjLfr1/WUCBtcjM=";
     @Autowired
     private BrokerMessageService brokerMessageService;
     final static String requestQueueName = "sb.test.req";
     final static String responseQueueName = "sb.test.rsp";
+=======
+    @Autowired
+    private BrokerMessageService brokerMessageService;
+    @Autowired
+    private ServiceBusConfig serviceBusConfig;
+    final static String requestQueueName = "sb.test.req"; //Cola de request
+    final static String responseQueueName = "sb.test.rsp"; //Cola de response
+>>>>>>> f53b877580c7646e7167bef49afc7b85f93cec5a
 
     public void ProcessMessage() throws InterruptedException {
 
         ServiceBusProcessorClient processorClient = new ServiceBusClientBuilder()
+<<<<<<< HEAD
                 .connectionString(connectionString)
+=======
+                .connectionString(serviceBusConfig.getConnectionString())
+>>>>>>> f53b877580c7646e7167bef49afc7b85f93cec5a
                 .processor()
                 .queueName(requestQueueName)
                 .processMessage(context -> processMessage(context))
